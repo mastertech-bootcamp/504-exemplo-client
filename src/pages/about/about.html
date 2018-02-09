@@ -1,11 +1,27 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Cadastro
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">Nome*</ion-label>
+      <ion-input [(ngModel)]="dados.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">E-mail*</ion-label>
+      <ion-input [(ngModel)]="dados.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Telefone</ion-label>
+      <ion-input [(ngModel)]="dados.telefone"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button (click)="enviar()">Enviar</button>
 
 </ion-content>
